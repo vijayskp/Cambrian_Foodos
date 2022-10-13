@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Cambrain_Foodos/1.0.0": {
+        "runtime": {
+          "Cambrain_Foodos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cambrain_Foodos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

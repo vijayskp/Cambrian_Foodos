@@ -1,0 +1,86 @@
+﻿@page "/"
+@page "/login"
+@using Cambrain_Foodos.Data;
+
+@inject UserService userService
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login/Register</title>
+        <link rel="stylesheet" href="./css/login.css">
+    </head>
+<body>
+
+  <div class="container">
+      <div class="loginbg">
+          <div class="box signin">
+              <h2>Already Have an Account ?</h2>
+              <button class="signinbtn">Login</button>
+          </div>
+          <div class="box signup">
+            <h2>Dont Have an Account ?</h2>
+            <button class="signupbtn">Register</button>
+          </div>
+      </div>
+      <div class="formbx">
+        <div class="form signinform">
+            <form>
+                <h2>Cambrian Foodos</h2>
+                <h3>Login</h3>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="home.html">
+                <input type="button" value="Login">
+                </a>
+                <a href="#" class="forgot">Forgot password?</a>
+            </form>
+        </div>
+        <div class="form signupform">
+            <form>
+                <h3>Register</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Address">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+      </div>
+      </div>
+@*<script>
+    const signinbtn = document.querySelector('.signinbtn');
+    const signupbtn = document.querySelector('.signupbtn');
+    const formbx = document.querySelector('.formbx');
+    const body = document.querySelector('body')
+
+    signupbtn.onclick = function(){
+        formbx.classList.add('active')
+        body.classList.add('active')
+    }
+    signinbtn.onclick = function(){
+        formbx.classList.remove('active')
+        body.classList.remove('active')
+    }
+    </script>*@
+
+</body>
+</html>
+
+
+@code {
+
+    List<User> allUsers = new List<User>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        allUsers = await userService.GetAllUsers();
+
+    }
+
+}
