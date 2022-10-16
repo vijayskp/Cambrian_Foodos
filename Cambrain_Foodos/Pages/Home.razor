@@ -1,0 +1,71 @@
+﻿@page "/home"
+@using Cambrain_Foodos.Data;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="./css/Images/download.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+
+  <!--Header section start-->
+  <header>
+      <a href="#" class="logo"><span><i class="fa fa-utensils"></i></span>Cambrian Foodos</a>
+      <nav class="navbar">
+          <a class="active">Home</a>
+          <a>Contact us</a>
+          <a>feedback</a>
+          <a>Orders</a>
+      </nav>
+  </header>
+
+  <!--Home section start-->
+  <section class="home" id="home-section">
+  <!--Add-->
+  <div class="add">
+    <div class="add-container">
+      @*<img src="./css/Images/home.jpg">*@
+      <div class="textimg"><h1>Discover the best food and drinks</h1><br/>
+      <div>
+        <select name="Location" id="location">
+          <option value="location">Location</option>
+          <option value="sudbury">Sudbury</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+  @*<div class="restimg">
+   <img src="./css/Images/restaurant.jpg" width="350" height="200" onclick="location.href='/getrestaurant'" />
+  </div>*@
+  <section>
+  <div class="box-container">
+        <div class="box">
+            <a><img src="./css/Images/restaurant.jpg" width="350" height="200" onclick="location.href='/getrestaurant'"></a>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+            </div>
+        </div>
+ </div>
+ </section>
+<!--Add ends-->
+
+</body>
+</html>
+
+
+
+

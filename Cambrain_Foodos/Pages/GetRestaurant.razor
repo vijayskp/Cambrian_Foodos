@@ -1,0 +1,61 @@
+﻿@page "/getrestaurant"
+@using Cambrain_Foodos.Data;
+@using Cambrain_Foodos.Models;
+
+
+@inherits RestaurantBase.RestaurantBase
+
+@{
+    List<Restaurant> rest = GetRestaurants();
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="icon" href="./css/Images/download.png" type="image/icon type">
+    <link rel="stylesheet" href="./css/restaurant.css">
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>Cambrian Foodos</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./contact.html" >Contact us</a>
+            <a class="feed" id="feedback">feedback</a>
+            <a href="#">Orders</a>
+        </nav>
+    </header>
+
+   
+
+  <section class="barb" >
+    <h1 class="barbeque">Restaurants in Sudbury</h1>
+    
+    <div class="box-container">
+      @foreach(Restaurant restaurant in rest){
+        <div class="box">
+            <a><img src=@restaurant.RestaurantImage></a>
+            <h3>@restaurant.RestaurantName</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <br>
+                <p>@restaurant.Branch Branch</p>
+            </div>
+        </div>
+      }
+    </div>
+  </section>
+
+</body>
+</html>

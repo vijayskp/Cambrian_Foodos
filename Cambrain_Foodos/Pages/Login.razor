@@ -2,7 +2,8 @@
 @page "/login"
 @using Cambrain_Foodos.Data;
 
-@inject UserService userService
+
+
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,6 @@
         <link rel="stylesheet" href="./css/login.css">
     </head>
 <body>
-
   <div class="container">
       <div class="loginbg">
           <div class="box signin">
@@ -31,9 +31,9 @@
                 <h3>Login</h3>
                 <input type="text" placeholder="Username">
                 <input type="password" placeholder="Password">
-                <a href="home.html">
-                <input type="button" value="Login">
-                </a>
+              <a href="/Home" class="btn btn-primary">
+                Login
+              </a>
                 <a href="#" class="forgot">Forgot password?</a>
             </form>
         </div>
@@ -51,36 +51,8 @@
         </div>
       </div>
       </div>
-@*<script>
-    const signinbtn = document.querySelector('.signinbtn');
-    const signupbtn = document.querySelector('.signupbtn');
-    const formbx = document.querySelector('.formbx');
-    const body = document.querySelector('body')
-
-    signupbtn.onclick = function(){
-        formbx.classList.add('active')
-        body.classList.add('active')
-    }
-    signinbtn.onclick = function(){
-        formbx.classList.remove('active')
-        body.classList.remove('active')
-    }
-    </script>*@
 
 </body>
 </html>
 
 
-@code {
-
-    List<User> allUsers = new List<User>();
-
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-
-        allUsers = await userService.GetAllUsers();
-
-    }
-
-}
