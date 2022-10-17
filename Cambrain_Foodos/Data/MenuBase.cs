@@ -14,9 +14,17 @@ namespace MenuBase
             get;
             set;
         }
+
+        public order_details orderDetails
+        {
+            get;
+            set;
+        }
+
         protected override Task OnInitializedAsync()
         {
             MenuItems = new Menu_items();
+            orderDetails = new order_details();
             return base.OnInitializedAsync();
         }
         public List<Menu_items> getMenuItems()
@@ -36,14 +44,12 @@ namespace MenuBase
                 return MenuItems;
             }
         }
-
-
-
+       
         public void SaveItem()
         {
-            using (MenuDAL dal = new MenuDAL())
+            using (ItemDAL dal = new ItemDAL())
             {
-                dal.saveItems(MenuItems);
+                dal.saveItems(orderDetails);
             }
         }
 

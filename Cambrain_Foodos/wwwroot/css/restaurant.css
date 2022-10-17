@@ -301,3 +301,21 @@ header .icons #menu-bars{
 
     }
 }
+
+
+.containerItem{
+    margin-top: 150px;
+
+}
+
+
+.item-title {
+    margin-top:5px;
+    font-size:15px;
+
+}
+
+.price {
+    margin-top: 5px;
+    font-size:15px;
+}

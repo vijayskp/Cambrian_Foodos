@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qhViUOX4IqZl4u2rGBz38VDDFD4Y7wq4uE4Zs5fEQKg=",
+  "Hash": "OOvfGBENXCPgKnfROazRm9JdUdUxDpWu5lHv+80Sb5o=",
   "Source": "Cambrain_Foodos",
   "BasePath": "_content/Cambrain_Foodos",
   "Mode": "Default",
@@ -391,6 +391,40 @@
       "OriginalItemSpec": "wwwroot\\css\\Images\\veg_pizza.jpg"
     },
     {
+      "Identity": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\css\\Images\\website.jpg",
+      "SourceId": "Cambrain_Foodos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\",
+      "BasePath": "_content/Cambrain_Foodos",
+      "RelativePath": "css/Images/website.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\website.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\css\\Images\\website1.jpg",
+      "SourceId": "Cambrain_Foodos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\",
+      "BasePath": "_content/Cambrain_Foodos",
+      "RelativePath": "css/Images/website1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Images\\website1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\css\\Images\\wings_kfc.jpg",
       "SourceId": "Cambrain_Foodos",
       "SourceType": "Discovered",
@@ -423,6 +457,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\css\\Menu.css",
+      "SourceId": "Cambrain_Foodos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\",
+      "BasePath": "_content/Cambrain_Foodos",
+      "RelativePath": "css/Menu.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Menu.css"
     },
     {
       "Identity": "C:\\Users\\vpasa\\source\\repos\\Cambrain_Foodos\\Cambrain_Foodos\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
