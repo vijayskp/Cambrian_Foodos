@@ -1,0 +1,47 @@
+﻿
+@page "/register"
+@using Cambrain_Foodos.Data;
+
+
+@inherits CustomerBase.CustomerBase
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginbg">
+            <div class="box signin">
+                <h2>Already Have an Account ?</h2>
+                <button class="signinbtn">Login</button>
+            </div>
+                <div class="box signin">
+                <h2>Already Have an Account ?</h2>
+                <button class="signinbtn" onclick="location.href='/login'">Login </button>
+            </div>
+        </div>
+        <div class="formbx">
+            <div class="form signinform">
+                <form>
+                    <input type="text" placeholder="Name" @bind=customer.Name>
+                    <input type="text" placeholder="Email" @bind=customer.Email>
+                    <input type="text" placeholder="Phone Number" @bind=customer.PhoneNumber>
+                    <input type="text" placeholder="Address" @bind=customer.Address>
+                    <input type="text" placeholder="User Name" @bind=customer.UserName>
+                    <input type="password" placeholder="Password" @bind=customer.Password>
+                    <input type="password" placeholder="Confirm password">
+                    <button type="button" @onclick="() => SaveItem()">Register</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
